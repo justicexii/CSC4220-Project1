@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Website Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic website hosted on GitHub Pages.</p>
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>My Experience Creating This Website</h1>
+        
+        <h2>Domain & Hosting</h2>
+        <p>For this project, I chose to host my website using GitHub Pages, a free and easy-to-use hosting service that allows me to deploy static websites directly from a repository. I used a GitHub subdomain (e.g., myusername.github.io) since it provided a simple and effective solution without requiring a paid domain.</p>
+        <p>Setting up the domain involved configuring my repository, enabling GitHub Pages, and ensuring that my index.html file was properly placed in the root directory or the designated branch.</p>
+        
+        <h2>Website Setup</h2>
+        <p>I built this website using HTML for the structure, CSS for styling, and kept it simple without additional frameworks. Here’s how I approached the development:</p>
+        <ul>
+            <li><strong>HTML:</strong> I structured the webpage using elements like headings, paragraphs, and lists to organize the content logically.</li>
+            <li><strong>CSS:</strong> I applied basic styling, including background colors, font choices, and a responsive container for a clean layout.</li>
+            <li><strong>JavaScript (optional):</strong> Though not included here, I considered adding JavaScript for interactive features in the future.</li>
+        </ul>
+        
+        <h2>Networking Aspects</h2>
+        <p>Making my site accessible online required an understanding of key networking concepts. Here’s how they played a role:</p>
+        
+        <h3>Domain Name System (DNS)</h3>
+        <p>Since I used GitHub Pages, my website’s domain was automatically mapped to a GitHub-provided URL. If I wanted a custom domain, I could configure a CNAME record in the DNS settings to point to my GitHub-hosted site.</p>
+        <p>Common DNS records that could be relevant include:</p>
+        <ul>
+            <li><strong>A Record:</strong> Used if I were pointing a custom domain to an IP address.</li>
+            <li><strong>CNAME Record:</strong> Directs a subdomain (e.g., www.example.com) to my GitHub Pages site.</li>
+        </ul>
+        
+        <h3>IP Addresses</h3>
+        <p>Each website is accessed via an IP address, even if users type a domain name. My site, hosted on GitHub Pages, resolves to GitHub’s IP addresses, ensuring that visitors can reach my content.</p>
+        
+        <h3>Networking Protocols</h3>
+        <p>Several protocols were involved in making my site available:</p>
+        <ul>
+            <li><strong>HTTP/HTTPS:</strong> My site is accessible over HTTPS, ensuring secure data transfer.</li>
+            <li><strong>TCP/IP:</strong> This protocol suite enables communication between my browser and GitHub’s servers.</li>
+            <li><strong>DNS Protocol:</strong> Translates my GitHub Pages domain into an IP address.</li>
+        </ul>
+        
+        <p>By setting up this website, I gained hands-on experience with hosting, networking concepts, and web development fundamentals.</p>
+    </div>
 </body>
 </html>
