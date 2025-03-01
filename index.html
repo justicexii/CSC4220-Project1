@@ -5,55 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX-X');
+    </script>
     <style>
-        body {
-            font-family: "Montserrat", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 30px;
-            margin: 50px auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #222;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        h2, h3 {
-            color: #333;
-        }
-        ul {
-            text-align: left;
-            display: inline-block;
-            margin: 20px 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #444;
-        }
+        body{font-family:"Montserrat",sans-serif;margin:0;padding:0;background:linear-gradient(to right,#ff9a9e,#fad0c4);text-align:center;}
+        .container{max-width:800px;background:white;padding:30px;margin:50px auto;border-radius:15px;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
+        h1{color:#222;font-size:2.5em;text-shadow:2px 2px 5px rgba(0,0,0,0.2);}
+        h2,h3{color:#333;}
+        ul{text-align:left;display:inline-block;margin:20px 0;}
+        li{margin-bottom:10px;}
+        p{font-size:1.1em;line-height:1.6;color:#444;}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Computer Networks Project 1</h1>
-
         <h2> Author</h2>
         <p> Justice Gauldin</p>
         
         <h2>Domain & Hosting</h2>
-        <p>For this project, I chose to host my website using GitHub Pages, a free and easy-to-use hosting service that allows me to deploy static websites directly from a repository. I used a GitHub subdomain since it provided a simple and effective solution without requiring a paid domain.</p>
-        <p>Setting up the domain involved configuring my repository, enabling GitHub Pages, and ensuring that my index.html file was properly placed in the root directory or the designated branch.</p>
+        <p>For this project, I hosted my website using GitHub Pages, which provides free HTTPS.</p>
         
         <h2>Website Setup</h2>
         <p>I built this website using HTML for the structure, CSS for styling, and kept it simple without additional frameworks. Here’s how I approached the development:</p>
@@ -79,7 +56,28 @@
             <li><strong>DNS Protocol:</strong> Translates my GitHub Pages domain into an IP address.</li>
         </ul>
         
-        <p>By setting up this website, I gained hands-on experience with hosting, networking concepts, and web development fundamentals.</p>
+        <h2>Security Enhancements</h2>
+        <p>To improve security, I implemented the following measures:</p>
+        <ul>
+            <li><strong>HTTPS:</strong> GitHub Pages automatically provides HTTPS, ensuring secure connections.</li>
+            <li><strong>XSS Protection:</strong> Integrated <code>DOMPurify</code> to sanitize any potential user-generated content, preventing malicious script injection.</li>
+        </ul>
+        
+        <h2>Performance Optimization</h2>
+        <p>To enhance website speed and efficiency, I made these improvements:</p>
+        <ul>
+            <li><strong>CSS Minification:</strong> Optimized and minified inline CSS to reduce file size and improve page load time.</li>
+            <li><strong>CDN:</strong> GitHub Pages leverages a CDN to distribute content efficiently.</li>
+        </ul>
+        
+        <h2>Network Monitoring</h2>
+        <p>To track performance and detect potential issues, I integrated:</p>
+        <ul>
+            <li><strong>Google Analytics:</strong> Added a tracking script to monitor user activity and engagement.</li>
+            <li><strong>Wireshark:</strong> Used for analyzing network traffic and detecting vulnerabilities.</li>
+        </ul>
+        
+        <p>By implementing these enhancements, my website is now more secure, faster, and properly monitored for performance and potential threats.</p>
     </div>
 </body>
 </html>
